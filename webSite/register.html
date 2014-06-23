@@ -1,0 +1,284 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>DimentionSifi/Register</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine&amp;v1" />
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" />
+  <link rel="stylesheet" type="text/css" href="style/style.css" />
+  
+    <script>
+
+</script>
+  
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+</script>  
+  
+  
+<script>
+$(document).ready(function(){
+  $("#email1").blur(function(){
+
+    alert("Text: " + $("#ml").text());
+	alert("HTML: " + $("#ml").html());
+	//alert("Attribute: "$("#ml").attr("value"));
+  });
+});
+</script>
+
+
+<script>
+$(document).ready(function(){
+  $(":text").change(function(){
+    alert("Value changed to: " + $(":text").val());
+	//alert("Attribute: "$(":text").attr("name"));
+  });
+});
+</script>
+
+<script>
+$(document).ready(function(){
+  $("#txtar").focus(function(){
+    
+	$(this).val("I am a huge Sci-fi movie fan. etc. etc.");
+  });
+});
+
+
+</script>
+  
+</head>
+
+<body>
+  <div id="main">
+    <div id="header">
+	  
+      <div id="logo">
+        <h1>Sci-<a href="#">Fi</a></h1>
+		<h2><a href="#">Movies</a></h1>
+        <div class="slogan">Experience a new world.</div>
+      </div>
+	  <p>The website is made in the honor of: <a href="http://cs.utdallas.edu/" target="_blank">UTDallas - CS Department</a>
+		</p>
+      <div id="menubar">
+        <ul id="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="legends.html">Legends</a></li>
+          <li class="current"><a href="page.html">Register</a></li>
+          <li><a href="shop.html">Shop</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="site_content">
+      <div id="sidebar_container">
+        
+		
+        <div class="sidebar">
+        <!-- right sidebar items -->
+        <h3>Latest News</h3>
+        <h4>Legendary Pictures is co-producing Jurassic World!</h4>
+        <h5>1st Feb 2014</h5>
+        <p>Last August, it was originally speculated that due to the newly formed 
+		partnership between Legendary Pictures and Universal Pictures, that Legendary 
+		would be playing a part in the production of Colin Trevorrow's Jurassic World. 
+		Well, seems those rumors were true.
+		</p>
+		<h4>Jesse Eisenberg cast as Lex Luthor in 'Batman/Superman' film.</h4>
+        <h5>30st Jan 2014</h5>
+        <p>The Oscar-nominated star of The Social Network has been cast as the Man of Steel’s 
+		ultimate foe in Warner Bros. upcoming Batman/Superman film, the studio announced today. 
+		Jeremy Irons will co-star opposite Ben Affleck’s Batman as his 
+		butler and confidante Alfred Pennyworth in the upcoming Zack Snyder-directed film.
+		</p>
+        </div>
+        
+        <div class="sidebar">
+          
+		  <h3>Recent Hot Movies</h3>
+          <p>Movies that made it big.</p>
+		  <h4>Gravity</h4>
+          <h5>4th Oct 2013</h5>
+		  <h4>The Hunger Games: Catching Fire</h4>
+          <h5>22th Nov 2013</h5>
+		
+        </div>
+        
+        <div class="sidebar">
+          
+		  <h3>Upcoming Movies</h3>
+          <p>Anticipated movies that would hit the charts</p>
+		  <h4>300: Rise of an Empire</h4>
+          <h5>7th Mar 2014</h5>
+		  <h4>Noah</h4>
+          <h5>28th Mar 2014</h5>
+          
+        </div>
+      </div>
+      <div id="content">
+        <!-- insert the page content here -->
+        <h1>Join Us</h1>
+		<p>
+		Join us to recieve updates and news of the Sci-fi film industries. Connect your sci- fi blog with our site 
+		and get a chance to win $50000 through the best blog competition .
+		
+		</p>
+		<a name="jumpHere"><h2>Register</h2></a>
+        
+        <form  name="form1" action="#" onsubmit="return validateForm()" method="post" >
+		
+          <div class="form_settings">
+		  
+			<span id="foc" style = "display:none;">Enter in the textbox.</span>
+            <p><span id = "nm">Name *</span><input id = "nn" type="text" name="name" value="" style="color:black" /></p>
+            <p><span>About Yourself</span><textarea id="txtar" rows="8" cols="50" name="abt" style="color:black" ></textarea></p>
+			<p><span id = "f">Fav Sci-Fi Category *</span><select id="id" name="fav">
+			<option value="0">Select</option>
+			<option value="1">Universe and Space</option>
+			<option value="2">Machine and Intelligence</option>
+			<option value="3">Time Travel</option>
+			<option value="4">Super Heroes</option>
+			<option value="5">Biological</option>
+			</select>
+			</p>
+            <p><span id = "ml" value="attributeValue">E-mail * </span><input id="email1" type="email" name="email" value=""  style="color:black" /></p>
+            <p><span >Check to recieve email updates</span><input class="checkbox" type="checkbox" name="chk" value="" /></p>
+            <p><span id = "db">Date of Birth *</span><input type="date" name="bday" style="color:black"  /></p>
+			<p><span >Link to your Blog:</span> <input type="url" name="bloglink" style="color:black" /></p>
+			<p><span id = "gen">Gender:</span> <input class= "radio" id = "rad" type="radio" name="sex" value="male"/>Male</br>
+				<input class = "radio" type="radio" name="sex" value="female" />Female</p>
+			
+			<button  type="reset" value="Reset">  Reset</button>
+			<button id = "submitb" type="submit" value="Submit">Submit</button>
+			<!--<p style="padding-top: 15px"><span>&nbsp;</span><input class="submit" type="submit" name="name" value="Register" /></p>  -->
+			
+          </div>
+        </form>
+		
+		<script>
+			function validateForm()
+			{
+				var n=document.forms["form1"]["name"].value;
+				var mail=document.forms["form1"]["email"].value;
+				var gender=document.forms["form1"]["sex"].value;
+				var fav=document.forms["form1"]["fav"].value;
+				var dob=document.forms["form1"]["bday"].value;
+				
+				
+				
+				if (n==null || n=="")
+				{
+					
+					document.getElementById("nm").style.color="red"
+					document.forms["form1"]["name"].style.borderColor="red";
+					
+				}
+				else
+				{
+					document.getElementById("nm").style.color="white"
+					document.forms["form1"]["name"].style.borderColor="white";
+				}
+				if (mail==null || mail=="")
+				{
+					
+					document.getElementById("ml").style.color="red"
+					document.forms["form1"]["email"].style.borderColor="red";
+					
+				}
+				else
+				{
+					document.getElementById("ml").style.color="white"
+					document.forms["form1"]["email"].style.borderColor="white";
+				}
+				
+				if (dob==null || dob=="")
+				{
+					
+					document.getElementById("db").style.color="red"
+					document.forms["form1"]["bday"].style.borderColor="red";
+					
+				}
+				else
+				{
+					document.getElementById("db").style.color="white"
+					document.forms["form1"]["bday"].style.borderColor="white";
+				}
+				if (fav==0)
+				{
+					
+					document.getElementById("f").style.color="red"
+					document.forms["form1"]["fav"].style.borderColor="red";
+					
+				}
+				else
+				{
+					document.getElementById("f").style.color="white"
+					document.forms["form1"]["fav"].style.borderColor="white";
+				}
+				if(n==null || n=="" || mail==null || mail==""  || dob==null || dob=="" ||fav==0 )
+				{	
+					alert("Fields marked with * are required. Required fields are marked red.");
+					window.location = 'register.html#jumpHere';
+					return false;
+				}
+			}
+		</script>
+		
+		
+		
+		
+
+	
+	  <script>
+			function allowDrop(ev)
+			{
+				ev.preventDefault();
+			}
+
+			function drag(ev)
+			{
+				ev.dataTransfer.setData("Text",ev.target.id);
+			}
+
+			function drop(ev)
+			{
+				ev.preventDefault();
+				var data=ev.dataTransfer.getData("Text");
+				ev.target.appendChild(document.getElementById(data));
+				
+			}
+		</script>
+		
+		<p>Fun game: Drag the Moon image into the correct Square </p>
+
+		<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"> Directed by: Georges Méliès
+		</div>
+		<style>
+			#div1 {margin: 0 0 0 20px; width:250px;height:250px;padding: 0px;border:1px solid #aaaaaa;float:left}
+		</style>
+		
+		<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"> Directed by: George Lucas
+		</div>
+		<style>
+			#div2 {margin: 0 0 0 20px; width:250px;height:250px;padding:0px;border:1px solid #aaaaaa;float:left}
+		</style>
+		
+		<img id="drag1" src="style/moon.jpg" draggable="true" ondragstart="drag(event) " style= "margin: 0 0 0 10px" >
+		<br style="clear:left" />
+		<p style= "margin: 0 0 0 20px;color:black" id = "cans">
+		
+		</p>
+		<p style= "margin: 0 0 0 20px;color:black" id = "wans">
+		
+		</p>
+	  </div>
+	  
+    </div>
+    <div id="footer">
+      <p>The website has been developed by Nevil Ladani(2021190700) as a part of course Advanced Web Software(UTD)</p>
+    </div>
+  </div>
+</body>
+</html>

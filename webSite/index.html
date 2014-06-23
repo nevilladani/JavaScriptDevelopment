@@ -1,0 +1,413 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>DimentionSciFi</title>
+  <meta name="description" content="Sci-Fi Movies tred, review, information, updates and a lot more." />
+  <meta name="keywords" content="Sci-Fi, Science, Fiction, Aliens, Technology, Future, Time, Travel, Universe, Dimension, Era" />
+  <meta name="author" content="Nevil Ladani">
+  <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+  <meta charset="UTF-8">
+  <meta content="text">
+  <meta http-equiv="refresh" content="30">
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine&amp;v1" />
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" />
+  <link rel="stylesheet" type="text/css" href="style/style.css" />
+  
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+</script>
+
+
+
+
+<script>
+$(document).ready(function()
+  {
+  $("#chain").click(function(){
+    $("#poster").fadeOut().fadeIn(100).fadeTo(80,0.10).fadeTo(80,0.5).fadeTo(80,0.10).fadeTo(50,0.8).fadeTo(20,0.1).fadeTo("slow",1);
+  });
+});
+</script>
+
+
+
+
+
+<script>
+$(document).ready(function(){
+  $(document).keydown(function(e){
+    if(e.which == 39) {
+       $("#poster").animate({left:'180px'}).animate({opacity:"0.5"}).animate({opacity:"1"}).animate({left:'0px'});
+    }
+  });
+  $(document).keyup(function(e){
+    if(e.which == 39){  
+		$("#poster").stop(true);
+		alert("Stopped");
+		$("#poster").css({ 'left': 0 + 'px'});
+		$("#poster").fadeTo(100,1);
+	}		
+  }	
+  );
+});
+
+
+</script>
+
+<script>
+$(document).keypress(function(e) {
+    if(e.which == 13) {
+       
+	   $("#poster").fadeOut().fadeIn(100).fadeTo(80,0.10).fadeTo(80,0.5).fadeTo(80,0.10).fadeTo(50,0.8).fadeTo(20,0.1).fadeTo("slow",1);
+    }
+});
+</script>
+
+<script> 
+$(document).ready(function(){
+  $(".list1").mouseover(function(){
+    //$(".list1").animate({opacity:"0.2"},50);
+	$(this).css("color","white").animate({opacity:"0.2"},50).animate({opacity:"1"},1000);
+	
+	//$(this).animate({"font-size":"200%"},200);
+	
+  });
+  $(".list1").mouseout(function(){
+    
+	//$(".list1").animate({opacity:"1"},50);
+	$(this).stop();
+	
+	
+	$(this).animate({opacity:"1"},10);
+	$(this).css("color","inherit");
+ });
+ 
+  
+});
+</script>
+
+
+<script>
+$(document).ready(function(){
+  $("#fadeout").dblclick(function(){
+    $("#moon").fadeOut();
+  });
+});
+</script>
+
+<script>
+$(document).ready(function(){
+  $("#fadein").dblclick(function(){
+	$("#moon").fadeIn("slow");
+  });
+});
+</script>
+
+<script>
+$(document).ready(function(){
+  $("#fadetoggle").dblclick(function(){
+    $("#moon").fadeToggle(1000);
+    
+  });
+});
+</script>
+
+<script>
+$(document).ready(function(){
+  $("#fadeto30").dblclick(function(){
+    $("#moon").fadeTo("slow",0.30);
+    
+  });
+});
+</script>
+
+<script>
+$(document).ready(function(){
+  $("#fadeto100").dblclick(function(){
+    $("#moon").fadeTo("slow",1);
+    
+  });
+});
+</script>
+
+<script>
+$(document).ready(function(){
+  $("#toggle").click(function(){
+    $(".sidebar").toggle();
+  });
+});
+</script>
+
+<script>
+$(document).ready(function(){
+  $("#hide").click(function(){
+    $(".sidebar").hide();
+  });
+  $("#show").click(function(){
+    $(".sidebar").show();
+  });
+});
+</script>  
+  
+
+  
+  <script>
+function clickCounter()
+{
+if(typeof(Storage)!=="undefined")
+  {
+  if (localStorage.clickcount)
+    {
+    localStorage.clickcount=Number(localStorage.clickcount)+1;
+	document.getElementById("lk").disabled = "disabled";
+	
+    }
+  else
+    {
+    localStorage.clickcount=1;
+	sessionStorage.clickcount=1;
+    }
+  document.getElementById("result").innerHTML="Number of Likes: " + localStorage.clickcount ;
+  
+  }
+else
+  {
+  document.getElementById("result").innerHTML="Sorry, your browser does not support web storage...";
+  }
+}
+</script>
+  
+  
+  
+</head>
+
+<body>
+  <div id="main">
+    <div id="header">
+	  
+
+      <div id="logo">
+        <h1>Sci-<a href="#">Fi</a></h1>
+		
+		<h2><a href="#">Movies</a></h1>
+        <div class="slogan">When fantasy tends to reality.</div>
+		
+      </div>
+	  <p>The website is made in the honor of: <a href="http://cs.utdallas.edu/" target="_blank">UTDallas - CS Department</a>
+		</p>
+      <div id="menubar">
+        <ul id="menu">
+          <li class="current"><a href="index.html">Home</a></li>
+          <li><a href="legends.html">Legends</a></li>
+          <li><a href="register.html">Register</a></li>
+		  <li><a href="shop.html">Shop</a></li>
+          
+        </ul>
+      </div>
+    </div>
+    <div id="site_content">
+      <div id="sidebar_container">
+        <div class ="sidebar">
+			</br>
+			<p>STORAGE API: Click the button if you like the page. </p>
+			<p><button onclick="clickCounter()" type="button" id="lk">Like!</button></p>
+			<div id="result"></div>
+			
+		</div>
+		
+		
+		
+        <div class="sidebar">
+        <!-- right sidebar items -->
+			<h3>Latest News</h3>
+			<h4>Legendary Pictures is co-producing Jurassic World!</h4>
+			<h5>1st Feb 2014</h5>
+			<p>Last August, it was originally speculated that due to the newly formed 
+			partnership between Legendary Pictures and Universal Pictures, that Legendary 
+			would be playing a part in the production of Colin Trevorrow's Jurassic World. 
+			Well, seems those rumors were true.
+			</p>
+			<h4>Jesse Eisenberg cast as Lex Luthor in 'Batman/Superman' film.</h4>
+			<h5>30st Jan 2014</h5>
+			<p>The Oscar-nominated star of The Social Network has been cast as the Man of Steel’s 
+			ultimate foe in Warner Bros. upcoming Batman/Superman film, the studio announced today. 
+			Jeremy Irons will co-star opposite Ben Affleck’s Batman as his 
+			butler and confidante Alfred Pennyworth in the upcoming Zack Snyder-directed film.
+			</p>
+        </div>
+        
+        <div class="sidebar">
+          
+		  <h3>Recent Hot Movies</h3>
+          <p>Movies that made it big.</p>
+		  <h4>Gravity</h4>
+          <h5>4th Oct 2013</h5>
+		  <h4>The Hunger Games: Catching Fire</h4>
+          <h5>22th Nov 2013</h5>
+		
+        </div>
+        
+        <div class="sidebar">
+          
+		  <h3>Upcoming Movies</h3>
+          <p>Anticipated movies that would hit the charts</p>
+		  <h4>300: Rise of an Empire</h4>
+          <h5>7th Mar 2014</h5>
+		  <h4>Noah</h4>
+          <h5>28th Mar 2014</h5>
+          
+        </div>
+		
+		
+	  </div>
+      <div id="content">
+        <!-- Main content -->
+		
+		<button id="hide">Hide Side panel</button>
+		<button id="show">Show Side panel</button>
+		<button id="toggle">Toggle show/hide</button>
+		
+        <h1>Evolution of Science Fiction in harmony with Science, society and entertainment.</h1>
+		
+        <p>
+		Science Fiction films have been with us since 1902, when Georges Mélie’s 3 minute epic 
+		Le Voyage Dans La Lune took cinemagoers off the planet for the very first time. 
+		It drew upon Jules Verne and H. G. Wells in its depiction of a spacecraft being 
+		launched to the moon in a large cannon.[1] Its ground-breaking special effects 
+		pioneered the way for future science-fiction films, and it became largely popular 
+		after its release.
+		Science Fiction is a difficult genre to define. It can include both prophetic and 
+		nostalgic texts, glossy big budget effects-laden blockbusters, or small, gritty films 
+		about the human condition. The finest sci fi movies challenge audiences, taking them 
+		to places so far outside their everyday experience that they leave the cinema changed 
+		forever. The worst can be laughable.
+		
+		</p>
+		
+		<p>
+		<img id="moon" src="style/moon.jpg" alt="moon" style="float:right;" />
+		
+		<button id="fadeout" style= "width:140px;height:35px" >Fade out Image</button>
+		
+		<button id="fadein" style= "width:140px;height:35px" >Fade in Image</button>
+		</br>
+		<button id="fadetoggle" style= "width:140px;height:35px" >Fade toggle</button>
+		
+		<button id="fadeto30" style= "width:140px;height:35px" >Fade partially</button>
+		</br>
+		<button id="fadeto100" style= "width:140px;height:35px" >Visibility 100%</button>
+		<span style="margin:20px">Double CLick any button</span>
+		
+		</p>
+		
+		
+        <p>
+		The history of science fiction films parallels that of the motion picture industry as a 
+		whole, although it took several decades before the genre was taken seriously. Since the 1960s, 
+		major science fiction films have succeeded in pulling in large audience shares, and films of 
+		this genre have become a regular staple of the film industry. Science fiction films have led 
+		the way in special effects technology, and have also been used as a vehicle for social commentary.
+		</p>
+		<p>
+		The science fiction genre maintains a remarkable hold on the imagination and enthusiasm of the 
+		filmgoing public, captivating large audiences worldwide and garnering ever-larger profits. Science 
+		fiction films entertain the possibility of time travel and extraterrestrial visitation and 
+		imaginatively transport us to worlds transformed by modern science and technology. They also 
+		provide a medium through which questions about personal identity, moral agency, artificial 
+		consciousness, and other categories of experience can be addressed.
+		</p>
+		<h2>Major Science Fiction Domains</h2>
+        <p>Some of the arenas influencing Science Fiction movies are as follows:</p>
+        <ul style="color:grey">
+          <li class = "list1"><Em> Apocalyptic</Em> and post-apocalyptic science fiction</li>
+          <li class = "list1"><Em>Biopunk</Em>: Film noir to describe the nihilistic, underground side of the biotech society.</li>
+          <li class = "list1"><Em>Cli fi</Em>: Emphasizes effects of anthropogenic climate change at the end of the Holocene era</li>
+          <li class = "list1"><Em>Dying Earth</Em> science fiction</li>
+          <li class = "list1"><Em>Military</Em> science fiction</li>
+		  <li class = "list1"><Em>Time travel</Em></li>
+		  <li class = "list1"><Em>Space</Em> colonization</li>
+		  <li class = "list1"><Em>Space opera</Em> :emphasizes romantic adventure, exotic settings, and larger-than-life characters </li>
+		  <li class = "list1"><Em>Spy-fi</Em> </li>
+		  <li class = "list1"><Em>Superheroes</Em> </li>
+        </ul>
+		<p style="color:lightgrey;">
+		*Used Mouse Enter, Mouse Leave Function
+		</p>
+		<button id="chain"> Image chain fade</button>
+		<p style="color:red;">
+		Press "ENTER" to view the image chain fade effects (keypress event).
+		</br>
+		Press "LEFT ARROW KEY" to view the image animation (keydown/up event).
+		</p>
+		
+		<h2>Popular Movies over the time</h2>
+		<img id="poster" src="style/poster.jpg" width="500" height="250" alt="poster" usemap="#postermap" style="position:relative"/>
+		<map name="postermap">
+			<area shape="starwars" coords="20,10,155,170" href="http://wall.alphacoders.com/by_sub_category.php?id=172083" alt="Sun" target="_blank">
+			<area shape="starwars2" coords="20,190,155,235" href="http://en.wikipedia.org/wiki/Star_Wars" alt="Sun" target="_blank">
+			<area shape="future" coords="170,85,325,235" href="http://wall.alphacoders.com/by_sub_category.php?id=171709" alt="Mercury" target="_blank">
+			<area shape="future2" coords="170,10,325,80" href="http://en.wikipedia.org/wiki/Back_to_the_Future" alt="Mercury" target="_blank">
+			<area shape="matrix" coords="340,10,480,165" href="http://wall.alphacoders.com/by_sub_category.php?id=198802" alt="Venus" target="_blank">
+			<area shape="matrix2" coords="340,170,480,230" href="http://en.wikipedia.org/wiki/The_Matrix" alt="Venus" target="_blank">
+		</map>
+		
+		<p style="color:grey"  >Click on movie name in the image to get movie information.
+		<br />
+		
+		
+		
+		Click on the characters to get movie wallpapers.
+		</p>
+		
+		<p id="demo">Click the button to get your location on map:</p>
+		<button onclick="getLocation()">Get Location</button>
+		<div id="mapholder"></div>
+		<script>
+			var x=document.getElementById("demo");
+			function getLocation()
+			{
+				if (navigator.geolocation)
+				{
+					navigator.geolocation.getCurrentPosition(showPosition,showError);
+					
+				}
+				else{x.innerHTML="Geolocation is not supported by this browser.";}
+			}
+			
+			function showPosition(position)
+			{
+				var latlon = position.coords.latitude + "," + position.coords.longitude;
+
+				var img_url = "http://maps.googleapis.com/maps/api/staticmap?center="
+				+latlon+"&zoom=14&size=400x300&sensor=false";
+				document.getElementById("mapholder").innerHTML = "<img src='"+img_url+"'>";
+			}
+			function showError(error)
+			{
+			switch(error.code) 
+			{
+			case error.PERMISSION_DENIED:
+				x.innerHTML="User denied the request for Geolocation."
+				break;
+			case error.POSITION_UNAVAILABLE:
+				x.innerHTML="Location information is unavailable."
+				break;
+			case error.TIMEOUT:
+				x.innerHTML="The request to get user location timed out."
+				break;
+			case error.UNKNOWN_ERROR:
+				x.innerHTML="An unknown error occurred."
+				break;
+			}
+			}
+		</script>
+		
+		
+	  </div>
+    </div>
+    <div id="footer">
+      <p>The website has been developed by Nevil Ladani(2021190700) as a part of course Advanced Web Software(UTD)</p>
+    </div>
+  </div>
+</body>
+</html>

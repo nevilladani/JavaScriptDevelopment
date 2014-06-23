@@ -1,0 +1,268 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	
+  <title>DimentionSifi/legends</title>
+  <meta name="description" content="Influential Sci-Fi directors and movies." />
+  <meta name="keywords" content="Sci-Fi Legends, Sci-Fi Directors" />
+  <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine&amp;v1" />
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" />
+  <link rel="stylesheet" type="text/css" href="style/style.css" />
+  
+  
+ </script>
+  
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+</script>   
+
+
+<script>	
+
+$(document).ready(function(){
+	$(".delb").click(function(){
+		//alert("Stopped");
+		//$(this).closest("tr").remove();
+	});
+});	
+
+function delrw(){
+	//alert("dfvbdfbdf");
+	var current= window.event.srcElement;
+	current.parentElement.parentElement.remove();
+	//$(this).closest("tr").remove();
+}
+</script>
+    
+<script>	
+$(document).ready(function(){
+	$("#addrow").click(function(){
+		
+		$("#mytable tr:last").after('<tr><td><input type="text" style="height:30px;"/></td><td><input type="text" style="height:30px;"/></td><td><input type="text" style="height:30px;"/></td><td><input type="text" style="height:30px;"/></td><td><button onclick="delrw()" class="delb " style="margin: 2px 2px 2px 2px"> Del </button ></td></tr>');
+	});
+});	
+</script>
+
+
+<script>
+var a = 0;	
+$(document).keydown(function(e) {
+    if(e.which==18)
+	{
+		a=1;
+		
+    }
+});
+$(document).keyup(function(e) {
+    if(e.which==18)
+	{
+		a=0;
+		$("td").css("background-color","white");
+		
+		
+    }
+});
+
+
+
+
+
+$(document).ready(function(){ 
+    
+  $("td").hover(function(){
+	if(a==1)
+	{
+    $(this).css("background-color","yellow");
+	}
+    },function(){
+    $(this).css("background-color","white");
+  });	   
+	
+   
+});
+
+
+</script>
+
+
+
+</head>
+
+<body>
+  <div id="main">
+    <div id="header">
+	  
+      <div id="logo">
+        <h1>Sci-<a href="#">Fi</a></h1>
+		<h2><a href="#">Movies</a></h1>
+        <div class="slogan">Scientists and Science of the other dimention.</div>
+      </div>
+	  <p>The website is made in the honor of: <a href="http://cs.utdallas.edu/" target="_blank">UTDallas - CS Department</a>
+		</p>
+      <div id="menubar">
+        <ul id="menu">
+          <li><a href="index.html">Home</a></li>
+          <li class="current"><a href="legends.html">Legends</a></li>
+          <li><a href="register.html">Register</a></li>
+          <li><a href="shop.html">Shop</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="site_content">
+      <div id="sidebar_container">
+        
+		
+        <div class="sidebar">
+        <!-- right sidebar items -->
+        <h3>Latest News</h3>
+        <h4>Legendary Pictures is co-producing Jurassic World!</h4>
+        <h5>1st Feb 2014</h5>
+        <p>Last August, it was originally speculated that due to the newly formed 
+		partnership between Legendary Pictures and Universal Pictures, that Legendary 
+		would be playing a part in the production of Colin Trevorrow's Jurassic World. 
+		Well, seems those rumors were true.
+		</p>
+		<h4>Jesse Eisenberg cast as Lex Luthor in 'Batman/Superman' film.</h4>
+        <h5>30st Jan 2014</h5>
+        <p>The Oscar-nominated star of The Social Network has been cast as the Man of Steel’s 
+		ultimate foe in Warner Bros. upcoming Batman/Superman film, the studio announced today. 
+		Jeremy Irons will co-star opposite Ben Affleck’s Batman as his 
+		butler and confidante Alfred Pennyworth in the upcoming Zack Snyder-directed film.
+		</p>
+        </div>
+        
+        <div class="sidebar">
+          
+		  <h3>Recent Hot Movies</h3>
+          <p>Movies that made it big.</p>
+		  <h4>Gravity</h4>
+          <h5>4th Oct 2013</h5>
+		  <h4>The Hunger Games: Catching Fire</h4>
+          <h5>22th Nov 2013</h5>
+		
+        </div>
+        
+        <div class="sidebar">
+          
+		  <h3>Upcoming Movies</h3>
+          <p>Anticipated movies that would hit the charts</p>
+		  <h4>300: Rise of an Empire</h4>
+          <h5>7th Mar 2014</h5>
+		  <h4>Noah</h4>
+          <h5>28th Mar 2014</h5>
+          
+        </div>
+      </div>
+      <div id="content">
+        <!-- Main content  -->
+        
+        <h1>Legends of Sci-Fi flim industry</h1>
+        
+        <h2>Influential Movies</h2>
+        <p>
+		The debate over the best science fiction movies is an ongoing argument between fanboys and sci-fi fans. 
+		It's difficult to judge the best sci-fi movies because there are so many criteria upon which to judge, and 
+		passions among fans often run high. However, a few films make every "best-of" debate, and that's because these 
+		are truly the best science fiction movies of all time.
+		The best science fiction films endure by transcending the limitations of present-day knowledge. They look beyond 
+		contemporary trends to the big questions of how science and technology shape the human spirit, and vice versa.
+		
+		</p>
+		<p>
+		 Here are few of the most influential movies according to <a href="http://www.imdb.com/search/title?at=0&genres=sci_fi&sort=num_votes" target="_blank">IMDB</a> voters. 
+		 The movies are ordered according to their release year.
+		</p>
+		<ol>
+          <li>Frankenstein (1931) </li>
+          <li>Star Wars (1977)</li>
+		  <li>Blade Runner (1982)</li>
+          <li>The Terminator (1984)</li>
+		  <li>The Matrix (1999)</li>
+          <li>Inception (2010)</li>
+        </ol>
+		
+        
+        <h2>Fiction Scientists:</h2>
+		<p>
+		As creative works, science fiction films last only by embracing what Faulkner called, "the old verities and truths of the heart, 
+		love and honor and pity and pride and compassion and sacrifice." Ideas are never enough; the best science fiction films also 
+		contain complex characters, thoroughly imagined situations and settings, and well-constructed narratives - not to mention a distinctive 
+		voice and sense of style. Putting all these elements together is the director's responsibility, and certain directors, whether 
+		inside or outside of Hollywood, consistently make the best science fiction films. 
+		</p>
+        <p>While there are many directors, story writters and producers who have shaped the filmmaking into whole new worlds, we list down a few of those Legends:</p>
+        <dl>
+			<dt><a href="http://en.wikipedia.org/wiki/Stanley_Kubrick" target="_blank">Stanley Kubrick</a></dt>
+				<dd > 
+				- Stanley Kubrick (July 26, 1928 – March 7, 1999) was an American film director, 
+				screenwriter, producer, cinematographer, and editor who did most of his work as an expatriate 
+				in the United Kingdom. He is regarded by many as one of the greatest filmmakers of all time. His 
+				films, typically adaptations of novels or short stories, are noted for their dazzling and unique 
+				cinematography, attention to detail in the service of realism, and the evocative use of music.
+				</br>
+				Well known for movie:  2001-A Space Odyssey, A clock work orange
+				</dd>
+				
+				 
+				
+			<dt><a href="http://en.wikipedia.org/wiki/Steven_Spielberg" target="_blank">Steven Spielberg</a></dt>
+				<dd >
+				- Steven Allan Spielberg (born December 18, 1946)[4] is an American film director, screenwriter, 
+				producer, and business magnate. In a career of more than four decades, Spielberg's films have 
+				covered many themes and genres. Spielberg's early science-fiction and adventure films were seen 
+				as archetypes of modern Hollywood blockbuster filmmaking.
+				He is also one of the few Hollywood filmmakers willing to ask how technology changes our 
+				relationships with ourselves, and each other.
+				</br>
+				Well known for movies:  Artificial Intelligence, Extra Terrestrial
+				</dd>
+				
+			<dt><a href="http://en.wikipedia.org/wiki/Ridley_Scott" target="_blank">Ridley Scott</a></dt>
+				<dd >
+				- Sir Ridley Scott (born 30 November 1937) is an English film director and producer is known for 
+				his atmospheric, highly concentrated visual style, which has influenced many directors.
+				Sir Ridley was knighted in 2003 for his "substantial contribution to the British film industry".
+				</br>
+				Well known for movies:  Blade Runner (1982), Alien (1979)
+				</dd>
+			
+			<dt><a href="http://en.wikipedia.org/wiki/George_Lucas" target="_blank">George Lucas</a></dt>
+				<dd >
+				- George Walton Lucas (born May 14, 1944) is an American film producer, screenwriter, director, 
+				and entrepreneur. He founded Lucasfilm Limited and led the company as chairman and chief executive 
+				before selling it to The Walt Disney Company on October 30, 2012.[2] He is best known as the creator 
+				of the space opera franchise Star Wars
+				</br>
+				Well known for movies:  Star wars, Indiana Jones
+				</dd>
+			
+			
+		</dl>
+        
+        
+		
+        <h2>Box Office</h2>
+        <p>Following are the movies that made it huge at box office:</p>
+        <table id="mytable" style="width:100%; border-spacing:2;">
+		
+          <tr><th>Movie</th><th>Director</th><th>Box Office</th><th>Release year</th><th>Delete Row</th></tr>
+          <tr><td>Avatar</td><td>James Cameron</td><td>$760,507,625</td><td>12/18/09</td> <td><button onclick="delrw()" class="delb" style="margin: 2px 2px 2px 2px"> Del </button ></td> </tr>
+          <tr><td>Star Wars: Episode I - The Phantom Menace</td><td> George Lucas</td><td>$474,544,677</td><td>5/19/99</td><td><button onclick="delrw()" class="delb" style="margin: 2px 2px 2px 2px"> Del </button ></td></tr>
+          <tr><td>Star Wars</td><td> George Lucas</td><td>$460,998,007</td><td>5/25/77</td><td><button onclick="delrw()" class="delb" style="margin: 2px 2px 2px 2px" > Del </button ></td></tr>
+          <tr><td>The Extra-Terrestrial</td><td>Steven Spielberg</td><td>$435,110,554</td><td>6/11/82</td><td><button onclick="delrw()" class="delb" style="margin: 2px 2px 2px 2px"> Del </button ></td></tr>
+		  <tr><td>Jurassic Park</td><td>Steven Spielberg</td><td>$402,453,882</td><td>6/11/93</td><td><button onclick="delrw()" class="delb" style="margin: 2px 2px 2px 2px"> Del </button ></td></tr>
+        
+		</table>
+		
+		<button id="addrow"> Add Row</button>
+		
+		
+      </div>
+    </div>
+    <div id="footer">
+      <p>The website has been developed by Nevil Ladani(2021190700) as a part of course Advanced Web Software(UTD)</p>
+    </div>
+  </div>
+</body>
+</html>
